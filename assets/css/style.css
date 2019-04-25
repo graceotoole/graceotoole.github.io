@@ -1,0 +1,355 @@
+/*--------------------------------------------------------------------------
+
+Title + cover image
+
+---------------------------------------------------------------------------*/ 
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+    margin-bottom: 20px;
+}
+
+.cover-container{
+    position: relative;
+    text-align: center;
+
+}
+
+#cover{
+    margin=0px;
+    padding=0px;
+
+}
+
+#page-title{
+    font-family: 'Alex Brush', cursive;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 3.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+ }
+ 
+
+#crop{
+    height: 100px;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------------------
+
+Navbar
+
+---------------------------------------------------------------------------*/ 
+
+.navbar{
+    background: #6B97C1;
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin-top:-4px;
+    margin-bottom:20px;
+}
+
+.navbar-item {
+    display:flex;
+    color:white;
+    font-size: 15px;
+    margin-right: 35px;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+/*--------------------------------------------------------------------------
+
+Sidebar
+
+---------------------------------------------------------------------------*/ 
+/*
+.profile-sidebar{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    padding-top:50px;
+    right:20px;
+    height: 500px;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+  background:  rgb(186, 211, 234);
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: absolute;
+    right: 0px;
+    justify-content:center;
+    align-items: center;
+    left:55px;
+    margin-top:20px;
+}
+
+#profile-pic {
+    display: absolute;
+    margin: 0 auto;
+    right: 0px;
+    justify-content: center;
+}
+
+#about-me{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    justify-content:center;
+    margin:20px;
+}
+*/
+/*--------------------------------------------------------------------------
+
+Content
+
+---------------------------------------------------------------------------*/ 
+#content-box{
+    display:flex;
+}
+
+.content-photo{
+    display: flex;
+    position: 
+}
+
+/*--------------------------------------------------------------------------
+
+Extra
+
+---------------------------------------------------------------------------*/ 
+
+/*links*/ 
+a{
+    color:white;
+    text-decoration: inherit;
+}
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align:justify;
+    text-align: center;
+    padding-top: 10px;
+    width:500px;
+    position: relative;
+    left:30%;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align:justify;
+    text-align: center;
+    width:500px;
+    position: relative;
+    left:30%;
+    padding-top: 10px;
+}
+
+
+
+
+/*--------------------------------------------------------------------------
+
+Grid
+
+---------------------------------------------------------------------------*/ 
+
+
+.grid-photo {
+  display: fixed;
+  max-width:350px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+  opacity: 0.5;
+  z-index:1;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.img-text{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 35px;
+    color: white;
+    top: 50%;
+    left:50%;
+    position:absolute;
+}
+    
+.grid-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.grid {
+    margin-right: 20px;
+   
+}
+
+.grid-photo:hover{
+    opacity:1;
+    transition: linear 0.2s;
+    
+}
+
+.container{
+    position:relative;
+    text-align: center;
+    vertical-align:middle;
+}
+
+/*#t0:hover, #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover, #t6:hover, #t7:hover, #t8:hover{
+    color: white;
+}
+
+/*text for grid images*/
+#t0{
+    margin-top:-20px;
+    margin-left:-35px;
+}
+
+
+#t1{
+    margin-top:-20px;
+    margin-left:-63px;
+}
+
+#t2{
+    margin-top:-20px;
+    margin-left:-80px;
+}
+
+#t3{
+    margin-top:-20px;
+    margin-left:-60px;
+}
+
+#t4{
+    margin-top:-20px;
+    margin-left:-50px;
+}
+
+#t5{
+    margin-top:-20px;
+    margin-left:-50px;
+}
+
+#t6{
+    margin-top:-20px;
+    margin-left:-50px;
+}
+
+#t7{
+    margin-top:-20px;
+    margin-left:-60px;
+}
+
+#t8{
+    margin-top:-20px;
+    margin-left:-60px;
+}
+
+
+
+/*Carousel*/
+
+#carousel-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	background-color: grey;
+	width:800px;
+	height: 500px;
+	overflow: hidden;
+}
+
+#carousel-strip {
+	transition: 0.4s;
+	position: fixed;
+	left: 0px;
+	display: flex;
+}
+
+.carousel-section {
+	height: 500px;
+	width: 800px;
+
+}
+
+.carousel-section img {
+    width: 800px;
+}
+
+
+/* Don't touch the code below !! */
+#left, #right {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 3;
+	padding: 20px;
+	font-size: 48px;
+	color: white;
+}
+
+#left {
+	left: calc(41% - 50vh);
+}
+
+#right {
+	right: calc(41% - 50vh);
+}
+
+#close {
+	color: white;
+	font: 36px/100% arial, sans-serif;
+  	position: fixed;
+	right: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 20px;
+	z-index: 3;
+}
+
+#overlay {
+	background: rgba(50, 152, 175, 0.6);
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}

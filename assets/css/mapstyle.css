@@ -1,0 +1,160 @@
+/*--------------------------------------------------------------------------
+
+Title + cover image
+
+---------------------------------------------------------------------------*/ 
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+}
+
+.cover-container{
+    position: relative;
+    text-align: center;
+
+}
+
+#cover{
+    margin=0px;
+    padding=0px;
+
+}
+
+#page-title{
+    font-family: 'Alex Brush', cursive;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#crop{
+    height: 100px;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------------------
+
+Navbar
+
+---------------------------------------------------------------------------*/ 
+
+.navbar{
+    background: #6B97C1;
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin-top:-4px;
+}
+
+.navbar-item {
+    display:flex;
+    color:white;
+    font-size: 15px;
+    margin-right: 35px;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+/*--------------------------------------------------------------------------
+
+Content
+
+---------------------------------------------------------------------------*/ 
+#content-box{
+    display:flex;
+}
+
+.content-photo{
+    display: flex;
+    position: 
+}
+
+.title{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 60px;
+    text-align:center;
+    padding-top: 30px;
+}
+
+.subheader{
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+/*#best-of{
+    writing-mode: vertical-lr;
+text-orientation: mixed;
+}*/
+
+/*--------------------------------------------------------------------------
+
+Map
+
+---------------------------------------------------------------------------*/ 
+#map{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:70%;
+    height: 70%;
+}
+
+
+
+
+/*--------------------------------------------------------------------------
+
+Grid
+
+---------------------------------------------------------------------------*/ 
+
+#over-title{
+    display: absolute;
+    left: 30px;
+}
+
+
+/*--------------------------------------------------------------------------
+
+Extra
+
+---------------------------------------------------------------------------*/ 
+
+/*links*/ a{
+    color:white;
+    text-decoration: inherit;
+}
+
+
+/*--------------------------------------------------------------------------
+
+Parallax Scroll
+
+---------------------------------------------------------------------------*/ 
+
+.scroller {
+    opacity: 0.5;
+    transform: translate(0, 20px); 
+    transition: all 1s;
+  }
+  
+  .scroller.visible { 
+    opacity: 1;
+    transform: translate(0, 0);
+  }
