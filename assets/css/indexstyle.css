@@ -1,0 +1,470 @@
+/*--------------------------------------------------------------------------
+
+Title + cover image
+
+---------------------------------------------------------------------------*/ 
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body{
+    background: url("../img/glacierlake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover-container{
+    position: absolute;
+    text-align: center;
+}
+
+#page-title{
+    font-family: 'Alex Brush', cursive;
+    font-size: 80px;
+    font-size: 6vw;
+    color: black; 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 3.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+ }
+ 
+@keyframes fadeOut{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#crop{
+    height: 100px;
+    overflow: hidden;
+}
+
+
+#page-title:hover {
+    color:grey;
+}
+
+.loader.one {
+	width: 100px;
+	height: 100px;
+}
+
+.loader.one .circle {
+	height: 100px;
+	width: 100px;
+	background:powderblue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	animation: circlegrow 2s forwards;
+}
+
+#setone{
+    position: absolute;
+    bottom:30%;
+    left:40%;
+    transform:scale(.5);
+}
+
+#settwo{
+    position: absolute;
+    bottom:50%;
+    left:74%;
+}
+
+#setthree{
+    position: absolute;
+    bottom:50%;
+    left:20%;
+    transform:scale(1.1);
+}
+
+#setfour{
+    position: absolute;
+    bottom:60%;
+    left:65%;
+    transform:scale(.7);
+}
+
+#setfive{
+    position: absolute;
+    bottom:60%;
+    left:45%;
+    transform:scale(.7);
+}
+
+#setsix{
+    position: absolute;
+    bottom:65%;
+    left:30%;
+    transform:scale(.9);
+}
+
+#setseven{
+    position: absolute;
+    bottom:75%;
+    left:42%;
+    transform:scale(.9);
+}
+
+#seteight{
+    position: absolute;
+    bottom:35%;
+    left:25%;
+    transform:scale(1.3);
+}
+
+#setnine{
+    position: absolute;
+    bottom:37%;
+    left:57%;
+    transform:scale(.7);
+}
+
+#setten{
+    position: absolute;
+    bottom:27%;
+    left:45%;
+    transform:scale(1.4);
+}
+
+
+#setoneone{
+    position: absolute;
+    bottom:30%;
+    left:40%;
+    transform:scale(.2);
+}
+
+#settwotwo{
+    position: absolute;
+    bottom:50%;
+    left:65%;
+    transform:scale(.3);
+}
+
+#setthreethree{
+    position: absolute;
+    bottom:50%;
+    left:20%;
+    transform:scale(.4);
+}
+
+#setfourfour{
+    position: absolute;
+    bottom:72%;
+    left:65%;
+    transform:scale(.4);
+}
+
+#setfivefive{
+    position: absolute;
+    bottom:60%;
+    left:45%;
+    transform:scale(.2);
+}
+
+#setsixsix{
+    position: absolute;
+    bottom:65%;
+    left:64%;
+    transform:scale(.4);
+}
+
+#setsevenseven{
+    position: absolute;
+    bottom:75%;
+    left:50%;
+    transform:scale(.6);
+}
+
+#seteighteight{
+    position: absolute;
+    bottom:35%;
+    left:46%;
+    transform:scale(.6);
+}
+
+#setninenine{
+    position: absolute;
+    bottom:37%;
+    left:57%;
+    transform:scale(.4);
+}
+
+#settenten{
+    position: absolute;
+    bottom:27%;
+    left:45%;
+    transform:scale(.6);
+}
+
+
+#set2one{
+    position: absolute;
+    bottom:20%;
+    left:40%;
+    transform:scale(.5);
+}
+
+#set2two{
+    position: absolute;
+    bottom:60%;
+    left:70%;
+}
+
+#set2three{
+    position: absolute;
+    bottom:70%;
+    left:20%;
+    transform:scale(1.1);
+}
+
+#set2four{
+    position: absolute;
+    bottom:74%;
+    left:65%;
+    transform:scale(.7);
+}
+
+#set2five{
+    position: absolute;
+    bottom:70%;
+    left:60%;
+    transform:scale(.7);
+}
+
+/* TODO: PART 1.3 - Delay pulse animation for circle two */
+.loader.one .second {
+	animation-delay: .5s;
+}
+
+/* TODO: PART 1.1 - Create pulse animation */
+@keyframes circlegrow{
+	from {transform: scale(0);
+		opacity:100;}
+	to {transform: scale(1);
+		opacity:0;}
+}
+
+
+@keyframes moveVert{
+    0% {transform:translateY(30px);}
+    100% {transform:translateY(-150px);}
+}
+
+@keyframes spin{
+    100%{
+    transform:rotate(180deg);}
+}
+
+@keyframes stretch{
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.5);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+
+@keyframes shadoweffect{
+    0%  {transform:scale(1);
+        opacity:0.5;}
+    100%{transform:scale(.5);
+         opacity:0.6;}
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/*--------------------------------------------------------------------------
+
+Navbar
+
+---------------------------------------------------------------------------*/ 
+
+.navbar{
+    
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom:10px;
+    margin-top:-4px;
+  /*--  margin-bottom:20px;--*/
+}
+
+.navbar-item {
+    display:flex;
+    color:white;
+    font-size: 15px;
+    margin-right: 35px;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: sticky;
+  }
+
+/*--------------------------------------------------------------------------
+
+Sidebar
+
+---------------------------------------------------------------------------*/ 
+/*
+.profile-sidebar{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    padding-top:50px;
+    right:20px;
+    height: 500px;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+  background:  rgb(186, 211, 234);
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: absolute;
+    right: 0px;
+    justify-content:center;
+    align-items: center;
+    left:55px;
+    margin-top:20px;
+}
+
+#profile-pic {
+    display: absolute;
+    margin: 0 auto;
+    right: 0px;
+    justify-content: center;
+}
+
+#about-me{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    justify-content:center;
+    margin:20px;
+}
+*/
+/*--------------------------------------------------------------------------
+
+Content
+
+---------------------------------------------------------------------------*/ 
+#content-box{
+    display:flex;
+}
+
+.content-photo{
+    display: flex;
+    position: 
+}
+
+/*--------------------------------------------------------------------------
+
+Extra
+
+---------------------------------------------------------------------------*/ 
+
+/*links*/ 
+a{
+    color:white;
+    text-decoration: inherit;
+}
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align:justify;
+    text-align: center;
+    padding-top: 10px;
+    width:500px;
+    position: relative;
+    left:30%;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align:justify;
+    text-align: center;
+    width:500px;
+    position: relative;
+    left:30%;
+    padding-top: 10px;
+}
+
+
+
+
+/* Don't touch the code below !! */
+#left, #right {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 3;
+	padding: 20px;
+	font-size: 48px;
+	color: white;
+}
+
+#left {
+	left: calc(41% - 50vh);
+}
+
+#right {
+	right: calc(41% - 50vh);
+}
+
+#close {
+	color: white;
+	font: 36px/100% arial, sans-serif;
+  	position: fixed;
+	right: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 20px;
+	z-index: 3;
+}
+
+#overlay {
+	background: rgba(50, 152, 175, 0.6);
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}
